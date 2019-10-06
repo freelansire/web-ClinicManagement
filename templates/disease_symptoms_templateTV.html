@@ -1,0 +1,13 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the disease_symptoms_init() hook (in hooks/disease_symptoms.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="disease_symptoms-disease-<%%VALUE(id)%%>" class="disease_symptoms-disease"><%%SELECT%%><%%VALUE(disease)%%><%%ENDSELECT%%></td>
+		<td id="disease_symptoms-symptoms-<%%VALUE(id)%%>" class="disease_symptoms-symptoms"><%%SELECT%%><%%VALUE(symptoms)%%><%%ENDSELECT%%></td>
+		<td id="disease_symptoms-reference-<%%VALUE(id)%%>" class="disease_symptoms-reference text-right"><a href="link.php?t=disease_symptoms&f=reference&i=<%%VALUE(id)%%>" target="_blank"><%%VALUE(reference)%%></a></td>
+		<script>$j(function(){
+			var e_reference = '<%%VALUE(reference)%%>'; if(e_reference == '' || e_reference == '&nbsp;') $j(/*<*/ '#disease_symptoms-reference-<%%VALUE(id)%%>' /*>*/).html('');
+		});</script>

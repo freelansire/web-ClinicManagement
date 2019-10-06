@@ -1,0 +1,19 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the medical_records_init() hook (in hooks/medical_records.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="medical_records-patient-<%%VALUE(id)%%>" class="medical_records-patient"><%%SELECT%%><%%VALUE(patient)%%><%%ENDSELECT%%></td>
+		<td id="medical_records-image_1-<%%VALUE(id)%%>" class="medical_records-image_1"><%%SELECT%%><img src="thumbnail.php?i=<%%VALUE(image_1)%%>&t=medical_records&f=image_1&v=tv" class="img-thumbnail"><%%ENDSELECT%%></td>
+		<td id="medical_records-image_2-<%%VALUE(id)%%>" class="medical_records-image_2"><%%SELECT%%><img src="thumbnail.php?i=<%%VALUE(image_2)%%>&t=medical_records&f=image_2&v=tv" class="img-thumbnail"><%%ENDSELECT%%></td>
+		<td id="medical_records-image_3-<%%VALUE(id)%%>" class="medical_records-image_3"><%%SELECT%%><img src="thumbnail.php?i=<%%VALUE(image_3)%%>&t=medical_records&f=image_3&v=tv" class="img-thumbnail"><%%ENDSELECT%%></td>
+		<td id="medical_records-image_4-<%%VALUE(id)%%>" class="medical_records-image_4"><%%SELECT%%><img src="thumbnail.php?i=<%%VALUE(image_4)%%>&t=medical_records&f=image_4&v=tv" class="img-thumbnail"><%%ENDSELECT%%></td>
+		<td id="medical_records-image_5-<%%VALUE(id)%%>" class="medical_records-image_5"><%%SELECT%%><img src="thumbnail.php?i=<%%VALUE(image_5)%%>&t=medical_records&f=image_5&v=tv" class="img-thumbnail"><%%ENDSELECT%%></td>
+		<td id="medical_records-document_1-<%%VALUE(id)%%>" class="medical_records-document_1"><%%SELECT%%><%%VALUE(document_1)%%><%%ENDSELECT%%></td>
+		<td id="medical_records-document_2-<%%VALUE(id)%%>" class="medical_records-document_2"><%%SELECT%%><%%VALUE(document_2)%%><%%ENDSELECT%%></td>
+		<td id="medical_records-document_3-<%%VALUE(id)%%>" class="medical_records-document_3"><%%SELECT%%><%%VALUE(document_3)%%><%%ENDSELECT%%></td>
+		<td id="medical_records-document_4-<%%VALUE(id)%%>" class="medical_records-document_4"><%%SELECT%%><%%VALUE(document_4)%%><%%ENDSELECT%%></td>
+		<td id="medical_records-document_5-<%%VALUE(id)%%>" class="medical_records-document_5"><%%SELECT%%><%%VALUE(document_5)%%><%%ENDSELECT%%></td>
+		<td id="medical_records-description-<%%VALUE(id)%%>" class="medical_records-description"><%%SELECT%%><%%VALUE(description)%%><%%ENDSELECT%%></td>

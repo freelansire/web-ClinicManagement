@@ -1,0 +1,21 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the patients_init() hook (in hooks/patients.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="patients-last_name-<%%VALUE(id)%%>" class="patients-last_name"><%%SELECT%%><%%VALUE(last_name)%%><%%ENDSELECT%%></td>
+		<td id="patients-first_name-<%%VALUE(id)%%>" class="patients-first_name"><%%SELECT%%><%%VALUE(first_name)%%><%%ENDSELECT%%></td>
+		<td id="patients-gender-<%%VALUE(id)%%>" class="patients-gender"><%%SELECT%%><%%VALUE(gender)%%><%%ENDSELECT%%></td>
+		<td id="patients-sexual_orientation-<%%VALUE(id)%%>" class="patients-sexual_orientation"><%%SELECT%%><%%VALUE(sexual_orientation)%%><%%ENDSELECT%%></td>
+		<td id="patients-age-<%%VALUE(id)%%>" class="patients-age"><%%SELECT%%><%%VALUE(age)%%><%%ENDSELECT%%></td>
+		<td id="patients-image-<%%VALUE(id)%%>" class="patients-image"><a href="<%%TRANSLATION(ImageFolder)%%><%%VALUE(image)%%>" data-lightbox="patients-image"><img src="thumbnail.php?i=<%%VALUE(image)%%>&t=patients&f=image&v=tv" class="img-thumbnail"></a></td>
+		<td id="patients-state-<%%VALUE(id)%%>" class="patients-state"><%%SELECT%%><%%VALUE(state)%%><%%ENDSELECT%%></td>
+		<td id="patients-mobile-<%%VALUE(id)%%>" class="patients-mobile"><%%SELECT%%><%%VALUE(mobile)%%><%%ENDSELECT%%></td>
+		<td id="patients-tobacco_usage-<%%VALUE(id)%%>" class="patients-tobacco_usage"><%%SELECT%%><%%VALUE(tobacco_usage)%%><%%ENDSELECT%%></td>
+		<td id="patients-alcohol_intake-<%%VALUE(id)%%>" class="patients-alcohol_intake"><%%SELECT%%><%%VALUE(alcohol_intake)%%><%%ENDSELECT%%></td>
+		<td id="patients-history-<%%VALUE(id)%%>" class="patients-history"><%%SELECT%%><%%VALUE(history)%%><%%ENDSELECT%%></td>
+		<td id="patients-surgical_history-<%%VALUE(id)%%>" class="patients-surgical_history"><%%SELECT%%><%%VALUE(surgical_history)%%><%%ENDSELECT%%></td>
+		<td id="patients-obstetric_history-<%%VALUE(id)%%>" class="patients-obstetric_history"><%%SELECT%%><%%VALUE(obstetric_history)%%><%%ENDSELECT%%></td>
+		<td id="patients-genetic_diseases-<%%VALUE(id)%%>" class="patients-genetic_diseases"><%%SELECT%%><%%VALUE(genetic_diseases)%%><%%ENDSELECT%%></td>

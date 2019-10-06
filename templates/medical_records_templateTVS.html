@@ -1,0 +1,19 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the medical_records_init() hook (in hooks/medical_records.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="medical_records-patient-<%%VALUE(id)%%>" class="medical_records-patient"><%%VALUE(patient)%%></td>
+		<td id="medical_records-image_1-<%%VALUE(id)%%>" class="medical_records-image_1"><img src="thumbnail.php?i=<%%VALUE(image_1)%%>&t=medical_records&f=image_1&v=tv" class="img-thumbnail"></td>
+		<td id="medical_records-image_2-<%%VALUE(id)%%>" class="medical_records-image_2"><img src="thumbnail.php?i=<%%VALUE(image_2)%%>&t=medical_records&f=image_2&v=tv" class="img-thumbnail"></td>
+		<td id="medical_records-image_3-<%%VALUE(id)%%>" class="medical_records-image_3"><img src="thumbnail.php?i=<%%VALUE(image_3)%%>&t=medical_records&f=image_3&v=tv" class="img-thumbnail"></td>
+		<td id="medical_records-image_4-<%%VALUE(id)%%>" class="medical_records-image_4"><img src="thumbnail.php?i=<%%VALUE(image_4)%%>&t=medical_records&f=image_4&v=tv" class="img-thumbnail"></td>
+		<td id="medical_records-image_5-<%%VALUE(id)%%>" class="medical_records-image_5"><img src="thumbnail.php?i=<%%VALUE(image_5)%%>&t=medical_records&f=image_5&v=tv" class="img-thumbnail"></td>
+		<td id="medical_records-document_1-<%%VALUE(id)%%>" class="medical_records-document_1"><%%VALUE(document_1)%%></td>
+		<td id="medical_records-document_2-<%%VALUE(id)%%>" class="medical_records-document_2"><%%VALUE(document_2)%%></td>
+		<td id="medical_records-document_3-<%%VALUE(id)%%>" class="medical_records-document_3"><%%VALUE(document_3)%%></td>
+		<td id="medical_records-document_4-<%%VALUE(id)%%>" class="medical_records-document_4"><%%VALUE(document_4)%%></td>
+		<td id="medical_records-document_5-<%%VALUE(id)%%>" class="medical_records-document_5"><%%VALUE(document_5)%%></td>
+		<td id="medical_records-description-<%%VALUE(id)%%>" class="medical_records-description"><%%VALUE(description)%%></td>

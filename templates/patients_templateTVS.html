@@ -1,0 +1,21 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the patients_init() hook (in hooks/patients.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="patients-last_name-<%%VALUE(id)%%>" class="patients-last_name"><%%VALUE(last_name)%%></td>
+		<td id="patients-first_name-<%%VALUE(id)%%>" class="patients-first_name"><%%VALUE(first_name)%%></td>
+		<td id="patients-gender-<%%VALUE(id)%%>" class="patients-gender"><%%VALUE(gender)%%></td>
+		<td id="patients-sexual_orientation-<%%VALUE(id)%%>" class="patients-sexual_orientation"><%%VALUE(sexual_orientation)%%></td>
+		<td id="patients-age-<%%VALUE(id)%%>" class="patients-age"><%%VALUE(age)%%></td>
+		<td id="patients-image-<%%VALUE(id)%%>" class="patients-image"><a href="<%%TRANSLATION(ImageFolder)%%><%%VALUE(image)%%>" data-lightbox="patients-image"><img src="thumbnail.php?i=<%%VALUE(image)%%>&t=patients&f=image&v=tv" class="img-thumbnail"></a></td>
+		<td id="patients-state-<%%VALUE(id)%%>" class="patients-state"><%%VALUE(state)%%></td>
+		<td id="patients-mobile-<%%VALUE(id)%%>" class="patients-mobile"><%%VALUE(mobile)%%></td>
+		<td id="patients-tobacco_usage-<%%VALUE(id)%%>" class="patients-tobacco_usage"><%%VALUE(tobacco_usage)%%></td>
+		<td id="patients-alcohol_intake-<%%VALUE(id)%%>" class="patients-alcohol_intake"><%%VALUE(alcohol_intake)%%></td>
+		<td id="patients-history-<%%VALUE(id)%%>" class="patients-history"><%%VALUE(history)%%></td>
+		<td id="patients-surgical_history-<%%VALUE(id)%%>" class="patients-surgical_history"><%%VALUE(surgical_history)%%></td>
+		<td id="patients-obstetric_history-<%%VALUE(id)%%>" class="patients-obstetric_history"><%%VALUE(obstetric_history)%%></td>
+		<td id="patients-genetic_diseases-<%%VALUE(id)%%>" class="patients-genetic_diseases"><%%VALUE(genetic_diseases)%%></td>
